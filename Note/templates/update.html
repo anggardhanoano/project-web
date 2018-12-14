@@ -1,0 +1,14 @@
+{% extends 'dasar.html' %}
+
+
+{% block body %}
+        <h1>Edit Your Note</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{form.media }}
+            {{ form.as_p }}
+            <input id = "save" class="btn btn-success" type="submit" value="save">
+        </form>
+    
+{% endblock body %}
+    

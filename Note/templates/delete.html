@@ -1,0 +1,18 @@
+{% extends 'dasar.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class = "container">
+    <div class = "jumbotron">
+        <h1>Are You Sure Want to Delete This Note?</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="submit" class = "btn btn-danger" value="Delete">
+            <a class = "btn btn-secondary btn-success" href = "{% url 'notes:list' %}">Cancel</a>
+        </form>
+    </div>
+    </div>     
+    
+{% endblock body %}
+    

@@ -1,0 +1,22 @@
+{% extends 'dasar.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class = "container">
+        <h1>Detail Note</h1>
+    <div class = "jumbotron" id ="content-list">
+    
+    <h2>{{ detail_note.title}} </h2>
+    <h2>{{detail_note.content | safe}}</h2>
+</div>
+</div>     
+
+<div class = "container">
+
+    <a class = "btn btn-warning" href = "{% url 'notes:update' pk=detail_note.pk %}">edit</a>
+    <a class = "btn btn-danger" href = "{% url 'notes:delete' pk=detail_note.pk %}">delete</a>
+
+</div>
+{% endblock body %}
+    
