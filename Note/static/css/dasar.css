@@ -1,4 +1,5 @@
 .form-control {
+    display: none;
     width: 250px;
     text-align: center;
 }
@@ -19,6 +20,7 @@
 }
 
 #login h1 {
+    display: none;
     font-size: 60px;
     margin-top: 20px;
 }
@@ -98,4 +100,6 @@ label{
     margin-top: 10px;
     margin-left: -100px;
 }
+
+
 

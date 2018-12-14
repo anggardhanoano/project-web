@@ -30,3 +30,5 @@ urlpatterns = [
     path("logout", login_required(user_logout), name = "logout"),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+

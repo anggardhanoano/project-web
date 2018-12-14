@@ -7,7 +7,7 @@
         <h1>Welcome To NoaNote</h1>
         <h2>Halo {{user.get_username}}</h2>
             {% csrf_token %}
-        <a class = "btn btn-primary" href = "{% url 'notes:create' %}">Make Note</a>
+        <a id = "btn-login-signup" class = "btn btn-primary" href = "{% url 'notes:create' %}">Make Note</a>
     </div>    
 </div>
 

@@ -7,9 +7,10 @@ from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth  import get_user_model
 
-def index(request) :
-    user = request.user
-    if user != "AnonymousUser" :
-        return render(request, "home.html")
-    else :
-        return render(request, "index.html")
+def error_404(request):
+        
+        return render(request,'error_404.html')
+
+def error_500(request):
+        
+        return render(request,'error_500.html')
